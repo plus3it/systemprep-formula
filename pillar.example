@@ -1,0 +1,11 @@
+systemprep:
+
+  states:
+    # List of states to apply as part of the systemprep baseline
+    #- dotnet4
+    #- pshelp
+    #- netbanner.custom
+    #- emet
+    #- ash-windows.stig
+    #- ash-windows.iavm
+    #- ash-windows.delta
