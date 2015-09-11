@@ -1,7 +1,8 @@
 systemprep:
 
-  states:
-    # List of states to apply as part of the systemprep baseline
+  base-states:
+
+    # List of states to apply as part of the os configuration baseline
     #- dotnet4
     #- pshelp
     #- netbanner.custom
@@ -9,3 +10,11 @@ systemprep:
     #- ash-windows.stig
     #- ash-windows.iavm
     #- ash-windows.delta
+
+  ent-states:
+
+    # List of states to apply as part of the enterprise baseline
+    #- splunkforwarder-windows
+    #- mcafee-agent-windows
+    #- ntp-client-windows
+    #- windows-update-agent
