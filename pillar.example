@@ -9,6 +9,9 @@ systemprep:
     #- emet
     #- ash-windows.stig
     #- ash-windows.iavm
+
+  post-states:
+    # List of states to apply *after* all other states
     #- ash-windows.delta
 
   ent-states:
