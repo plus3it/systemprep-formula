@@ -22,7 +22,8 @@ are not present, then the formula will do nothing.
 ### systemprep:base-states
 
 A list of states defining the os-level configuration baseline to apply to the
-system.
+system. `base-states` will always run first, in the order specified in the
+list.
 
 **Example**:
 
@@ -35,10 +36,26 @@ systemprep:
 ```
 
 
+### systemprep:post-states
+
+A list of states that will be run last, after `base-states` and after
+`ent-states`. `post-states` will always run in the order specified in the
+list.
+
+**Example**:
+
+```
+systemprep:
+  post-states:
+    - ash-windows.delta
+```
+
+
 ### systemprep:ent-states
 
 A list of states defining the enterprise-controlled services to apply to the
-system.
+system. `ent-states` will always run just after `base-states`, in the order
+specified in the list.
 
 **Example**:
 
