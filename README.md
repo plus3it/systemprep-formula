@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/plus3it/systemprep-formula.svg)](https://travis-ci.org/plus3it/systemprep-formula)
+
 # systemprep
 
 Salt formula to manage states applied by the systemprep bootstrapping
