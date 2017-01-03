@@ -7,9 +7,9 @@ env:
     - SALT_STATE=systemprep
   matrix:
     - OS_VERSION=6 SALT_PILLARROOT=$TRAVIS_BUILD_DIR/tests/pillar/test-empty
-    - OS_VERSION=6 SALT_PILLARROOT=$TRAVIS_BUILD_DIR/tests/pillar/test-linux-main
+    # - OS_VERSION=6 SALT_PILLARROOT=$TRAVIS_BUILD_DIR/tests/pillar/test-linux-main
     - OS_VERSION=7 SALT_PILLARROOT=$TRAVIS_BUILD_DIR/tests/pillar/test-empty
-    - OS_VERSION=7 SALT_PILLARROOT=$TRAVIS_BUILD_DIR/tests/pillar/test-linux-main
+    # - OS_VERSION=7 SALT_PILLARROOT=$TRAVIS_BUILD_DIR/tests/pillar/test-linux-main
 
 services:
   - docker

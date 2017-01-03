@@ -7,7 +7,7 @@ environment:
     SALT_URL: https://repo.saltstack.com/windows/Salt-Minion-2016.3.4-AMD64-Setup.exe
   matrix:
     - SALT_PILLARROOT: '%APPVEYOR_BUILD_FOLDER%\tests\pillar\test-empty'
-    - SALT_PILLARROOT: '%APPVEYOR_BUILD_FOLDER%\tests\pillar\test-windows-main'
+    # - SALT_PILLARROOT: '%APPVEYOR_BUILD_FOLDER%\tests\pillar\test-windows-main'
 
 init:
   - ps: echo $env:PILLAR_HOME
