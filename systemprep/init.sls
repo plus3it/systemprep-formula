@@ -20,4 +20,18 @@ include:
 {%- for state in post_states %}
   - {{ state }}
 {%- endfor %}
+{%- else %}
+Print systemprep-formula help:
+  test.show_notification:
+    - text: |
+        The "systemprep" formula gets the states to apply from the pillar keys:
+
+            systemprep:base-states
+            systemprep:ent-states
+            systemprep:post-states
+
+        The states are applied in that order, and each pillar key may be a list
+        of one or more states (also applied in the order listed in the pillar).
+        None of those pillar keys are present, or they evaluate to False, so
+        the formula did not apply any states in this execution.
 {%- endif %}
