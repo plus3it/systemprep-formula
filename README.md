@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/plus3it/systemprep-formula.svg)](https://travis-ci.org/plus3it/systemprep-formula)
+[![license](https://img.shields.io/github/license/plus3it/systemprep-formula.svg)](./LICENSE)
+[![Travis Build Status](https://travis-ci.org/plus3it/systemprep-formula.svg?branch=master)](https://travis-ci.org/plus3it/systemprep-formula)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/plus3it/systemprep-formula?branch=master&svg=true)](https://ci.appveyor.com/project/plus3it/systemprep-formula)
 
 # systemprep
 
